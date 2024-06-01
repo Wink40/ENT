@@ -1,12 +1,4 @@
-import os
-import sys
 import streamlit as st
-
-# Handling paths for PyInstaller
-if getattr(sys, 'frozen', False):
-    base_path = sys._MEIPASS
-else:
-    base_path = os.path.abspath("")
 
 def get_ent_information(case):
     case = case.strip().lower()
