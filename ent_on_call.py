@@ -9,11 +9,11 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-st.image("TOP.jpg", caption="Your Caption", use_column_width=True)
+st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
 def get_ent_information(case):
     case = case.strip().lower()
     if "epistaxis" in case:
-        st.image("EPIS.jpg", caption="Dizziness")  # Add image
+        st.image("EPIS.jpg", caption="Epistaxis")  # Add image
         return (
             "EPISTAXIS.\n"
             "- If elderly patient then admit for 24 hours to monitor.\n"
@@ -21,13 +21,13 @@ def get_ent_information(case):
             "- If they do start mupirocin as alternative."
         )
     elif "nasal bone fracture" in case or "fracture" or "nasal" or "bone" in case:
-        st.image("NBF.jpg", caption="Dizziness")  # Add image
+        st.image("NBF.png", caption="Nasal fracture")  # Add image
         return (
             "NASAL BONE FRCATURE.\n"
             "- IF NO ONGOING BLEEDING/SEPTAL HAEMATOMA À ED TO DISCHARGE WITH ANALGESIA – CAS CLINIC IN 1 WEEK.\n"
         )
     elif "dizziness" in case:
-        st.image("DIZ.jpg", caption="Dizziness")  # Add image
+        st.image("DIZ.jpeg", caption="Dizziness")  # Add image
         return (
             "DIZZINESS.\n"
             "- ED to r/o central causes.\n"
@@ -35,14 +35,14 @@ def get_ent_information(case):
             "- If unable to mobilise then admit under medics."
         )
     elif "ear/ nose laceration" in case or "laceration" or "ear" in case:
-        st.image("LAC.jpg", caption="Dizziness")  # Add image
+        st.image("LAC.jpeg", caption="Laceration")  # Add image
         return (
             "EAR/ NOSE LACERATION.\n"
             "- DURING OUT OF HOURS IN NIGHT --> NEXT DAY SEAU OR ELSE SAME DAY SEAU AND REPAIR.\n"
             "- Complex laceration may need plastic referral.\n"
         )
     elif "foreign body" in case or "body" or "foreign" in case:
-        st.image("FB.jpg", caption="Dizziness")  # Add image
+        st.image("FB.jpg", caption="FB")  # Add image
         return (
             "FOREIGN BODY.\n"
             "- If airway --> call ENT reg.\n"
@@ -53,7 +53,7 @@ def get_ent_information(case):
             "- BATTERY – EMERGENCY – NEEDS REMOVAL IN 1-2 HOURS."
         )
     elif "neck abscess" in case or "abscess" or "neck" in case:
-        st.image("NA.jpg", caption="Dizziness")  # Add image
+        st.image("NA.jpg", caption="Neck abscess")  # Add image
         return (
             "NECK ABSCESS.\n"
             "- Check ABC.\n"
@@ -61,7 +61,7 @@ def get_ent_information(case):
             "- May need CT neck with contrast."
         )
     elif "ludwig's angina" in case or "angina" or "ludwig" in case:
-        st.image("LA.jpg", caption="Dizziness")  # Add image
+        st.image("LA.jpeg", caption="Ludwig's Angina")  # Add image
         return (
             "LUDWIG ANGINA.\n"
             "- Involvement of submental and submandibular space.\n"
@@ -69,7 +69,7 @@ def get_ent_information(case):
             "- ED to refer to Max Fax."
         )
     elif "post tonsillectomy bleed" in case or "tonsillectomy" in case or "bleed" in case:
-        st.image("TONS.jpg", caption="Dizziness")  # Add image
+        st.image("TONS.jpeg", caption="Post tonsillectomy bleed")  # Add image
         return (
             "POST TONSILLECTOMY BLEED.\n"
             "- If active bleeding call on call SpR Immediately.\n"
@@ -79,7 +79,7 @@ def get_ent_information(case):
             "- Must admit all post tonsillectomy/adenotonsillectomy bleeds."
         )
     elif "otitis externa/MEDIA/MASTOIDITS" in case or "otitis" or "media" in case or "mastoiditis" in case:
-        st.image("MAST.jpg", caption="Dizziness")  # Add image
+        st.image("MAST.jpeg", caption="Ear infection")  # Add image
         return (
             "OTITIS EXTERNA/MEDIA/ OTOMASTOIDITIS.\n"
             "- Ask NS in SEAU to do bloods on arrival.\n"
