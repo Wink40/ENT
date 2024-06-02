@@ -1,7 +1,21 @@
 import os
 import sys
 import streamlit as st
-st.image ("right_top.jpeg", width=300)
+with st.container():
+    # Create two columns with specified widths
+    col1, col2, col3 = st.columns([1, 6, 1])
+
+    with col1:
+        # space column
+        st.write(" ")
+
+    with col2:
+        # image
+        st.image("right_top.jpg", width=300)
+
+    with col3:
+        # Display the image on the right
+        st.write(" ")
 # Add a dividing line
 st.markdown("------------")
 def get_ent_information(case):
