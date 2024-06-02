@@ -92,7 +92,7 @@ def get_ent_information(case):
     else:
         return "No prompt found. Please provide correct prompt."
 
-st.title("ENT on Call Assistant")
+st.title("ENT on Call Assistant SWBH -  by Mr Shiraz Syed (ENT Reg)")
 
 st.write("Welcome to ENT on call. How can I help? Please enter the topic you want to know about.")
 case = st.text_input("Enter the topic:")
