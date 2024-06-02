@@ -9,6 +9,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.image("images/TOP.jpg", caption="Your Caption", use_column_width=True)
 def get_ent_information(case):
     case = case.strip().lower()
     if "epistaxis" in case:
