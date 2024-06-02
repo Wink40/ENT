@@ -9,6 +9,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
 def get_ent_information(case):
     case = case.strip().lower()
@@ -23,7 +24,7 @@ def get_ent_information(case):
     elif "nasal bone fracture" in case or "fracture" or "nasal" or "bone" in case:
         st.image("NBF.png", caption="Nasal fracture")  # Add image
         return (
-            "NASAL BONE FRCATURE.\n"
+            "NASAL BONE FRACTURE.\n"
             "- IF NO ONGOING BLEEDING/SEPTAL HAEMATOMA À ED TO DISCHARGE WITH ANALGESIA – CAS CLINIC IN 1 WEEK.\n"
         )
     elif "dizziness" in case:
