@@ -71,7 +71,7 @@ def get_ent_information(case):
             "- Start H2O2 gargles.\n"
             "- Must admit all post tonsillectomy/adenotonsillectomy bleeds."
        )
-    elif "otitis externa/media/MASTOIDITS" in case or "otitis" in case or "media" in case or "mastoiditis" in case:
+    elif "otitis externa/media/MASTOIDITS" in case or "otitis" in case or "media" in case or "externa" in case or "mastoiditis" in case:
         st.image("MAST.jpeg", caption="Ear infection")  # Add image
         return (
             "OTITIS EXTERNA/MEDIA/ OTOMASTOIDITIS.\n"
