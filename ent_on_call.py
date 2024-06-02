@@ -3,11 +3,11 @@ import sys
 import streamlit as st
 with st.container():
     # Create two columns with specified widths
-    col1, col2, col3 = st.columns([1, 10, 1])
+    col1, col2, col3 = st.columns([1, 8, 1])
 
     with col1:
         # Display the image on the left
-        st.image("left_top.jpg", width=200, height=200)
+        st.image("left_top.jpg", width=200, height=150)
 
     with col2:
         # Add a spacer column
@@ -15,7 +15,7 @@ with st.container():
 
     with col3:
         # Display the image on the right
-        st.image("right_top.jpeg", width=200, height=200)
+        st.image("right_top.jpeg", width=200, height=150)
 
 # Add a dividing line
 st.markdown("------------")
