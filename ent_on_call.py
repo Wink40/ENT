@@ -3,7 +3,7 @@ import sys
 import streamlit as st
 with st.container():
     # Create two columns with specified widths
-    col1, col2, col3 = st.columns([1, 6, 1])
+    col1, col2, col3 = st.columns([2, 8, 2])
 
     with col1:
         # space column
@@ -100,7 +100,7 @@ def get_ent_information(case):
     else:
         return "No prompt found. Please provide correct prompt."
 
-st.title("ENT on Call Assistant SWBH -  by Mr Shiraz Syed (ENT Reg)")
+st.title("ENT on Call Assistant")
 
 st.write("Welcome to ENT on call. How can I help? Please enter the topic you want to know about.")
 case = st.text_input("Enter the topic:")
