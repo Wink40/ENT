@@ -4,7 +4,7 @@ import streamlit as st
 st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
 def get_ent_information(case):
     case = case.strip().lower()
-     st.write(f"Debug: Case input - {case}")
+    st.write(f"Debug: Case input - {case}")
     if "epistaxis" in case:
         st.image("EPIS.jpg", caption="Epistaxis")  # Add image
         return (
@@ -70,7 +70,7 @@ def get_ent_information(case):
             "- NBM.\n"
             "- Start H2O2 gargles.\n"
             "- Must admit all post tonsillectomy/adenotonsillectomy bleeds."
-        )
+       )
     elif "otitis externa/MEDIA/MASTOIDITS" in case or "otitis" or "media" in case or "mastoiditis" in case:
         st.image("MAST.jpeg", caption="Ear infection")  # Add image
         return (
