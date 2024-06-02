@@ -1,15 +1,4 @@
 import streamlit as st
-st.markdown(
-    """
-    <style>
-    .big-textarea .stTextArea textarea {
-        width: 1000px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
 def get_ent_information(case):
     case = case.strip().lower()
