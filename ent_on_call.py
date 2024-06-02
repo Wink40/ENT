@@ -7,7 +7,7 @@ with st.container():
 
     with col1:
         # space column
-        st.write(" ")
+        st.write("  ")
 
     with col2:
         # image
@@ -100,7 +100,7 @@ def get_ent_information(case):
     else:
         return "No prompt found. Please provide correct prompt."
 
-st.title("ENT on Call Assistant")
+st.title("ENT on Call Assistant - developed by Mr Shiraz Syed")
 
 st.write("Welcome to ENT on call. How can I help? Please enter the topic you want to know about.")
 case = st.text_input("Enter the topic:")
