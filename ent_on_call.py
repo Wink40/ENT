@@ -1,7 +1,7 @@
 import os
 import sys
 import streamlit as st
-st.image ("right_top.jpeg")
+st.image ("right_top.jpeg", width=300)
 # Add a dividing line
 st.markdown("------------")
 def get_ent_information(case):
