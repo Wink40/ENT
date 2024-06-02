@@ -6,10 +6,10 @@ col1, col2 = st.columns(2)
 
 # Display images in the columns with specified width
 with col1:
-    st.image("left_image.jpg", width=200)
+    st.image("left_top.jpg", width=200)
 
 with col2:
-    st.image("right_image.jpg", width=200)
+    st.image("right_top.jpeg", width=200)
 
 # Add a dividing line
 st.markdown("---")
