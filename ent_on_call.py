@@ -1,7 +1,18 @@
 import os
 import sys
 import streamlit as st
-st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
+# Create two columns for left and right images
+col1, col2 = st.columns(2)
+
+# Display images in the columns with specified width
+with col1:
+    st.image("left_image.jpg", width=200)
+
+with col2:
+    st.image("right_image.jpg", width=200)
+
+# Add a dividing line
+st.markdown("---")
 def get_ent_information(case):
     case = case.strip().lower()
     st.write(f"Debug: Case input - {case}")
