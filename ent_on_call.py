@@ -1,12 +1,11 @@
 import os
 import sys
 import streamlit as st
-st.image ("left_top")
+st.image ("right_top.jpeg")
 # Add a dividing line
 st.markdown("------------")
 def get_ent_information(case):
     case = case.strip().lower()
-    st.write(f"Debug: Case input - {case}")
     if "epistaxis" in case:
         st.image("EPIS.jpg", caption="Epistaxis")  # Add image
         return (
