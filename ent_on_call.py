@@ -4,6 +4,7 @@ import streamlit as st
 st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
 def get_ent_information(case):
     case = case.strip().lower()
+     st.write(f"Debug: Case input - {case}")
     if "epistaxis" in case:
         st.image("EPIS.jpg", caption="Epistaxis")  # Add image
         return (
