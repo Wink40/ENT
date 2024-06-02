@@ -7,7 +7,7 @@ with st.container():
 
     with col1:
         # Display the image on the left
-        st.image("left_image.jpg", caption="Left Image", width=200)
+        st.image("left_top.jpg", caption="Left Image", width=200)
 
     with col2:
         # Add a spacer column
@@ -15,7 +15,7 @@ with st.container():
 
     with col3:
         # Display the image on the right
-        st.image("right_image.jpg", caption="Right Image", width=200)
+        st.image("right_top.jpeg", caption="Right Image", width=200)
 
 # Add a dividing line
 st.markdown("------------")
