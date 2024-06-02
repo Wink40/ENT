@@ -1,18 +1,24 @@
 import os
 import sys
 import streamlit as st
-# Create two columns for left and right images
-col1, col2 = st.columns(2)
+with st.container():
+    # Create two columns with specified widths
+    col1, col2, col3 = st.columns([1, 6, 1])
 
-# Display images in the columns with specified width
-with col1:
-    st.image("left_top.jpg", width=200)
+    with col1:
+        # Display the image on the left
+        st.image("left_image.jpg", caption="Left Image", width=200)
 
-with col2:
-    st.image("right_top.jpeg", width=200)
+    with col2:
+        # Add a spacer column
+        st.write(" ")
+
+    with col3:
+        # Display the image on the right
+        st.image("right_image.jpg", caption="Right Image", width=200)
 
 # Add a dividing line
-st.markdown("---")
+st.markdown("------------")
 def get_ent_information(case):
     case = case.strip().lower()
     st.write(f"Debug: Case input - {case}")
