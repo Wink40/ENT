@@ -91,4 +91,4 @@ case = st.text_input("Enter the topic:")
 
 if case:
     result = get_ent_information(case)
-    st.text_area("Result:", value=result, height=400, key="result", placeholder="Your result will appear here...", help="Enter the topic above to get the corresponding information.", css_class="big-textarea")
+    st.write(result)
