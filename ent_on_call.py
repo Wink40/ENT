@@ -13,7 +13,7 @@ def get_ent_information(case):
             "- CAN PROVIDE NASEPTIN CREAM QDS BUT CHECK FOR NUT ALLERGY.\n"
             "- If they do start mupirocin as alternative."
         )
-    elif "nasal bone fracture" in case or in case "nasal" or in case "bone" or in case "fracture" in case:
+    elif "nasal bone fracture" in case or "nasal" in case or "bone" in case or "fracture" in case:
         st.image("NBF.png", caption="Nasal fracture")  # Add image
         return (
             "NASAL BONE FRACTURE.\n"
@@ -27,14 +27,14 @@ def get_ent_information(case):
             "- F/u à balance clinic.\n"
             "- If unable to mobilise then admit under medics."
         )
-    elif "ear/nose laceration" in case or in case "ear" or in case "laceration" in case:
+    elif "ear/nose laceration" in case or "ear" in case or "laceration" in case:
         st.image("LAC.jpeg", caption="Laceration")  # Add image
         return (
             "EAR/ NOSE LACERATION.\n"
             "- DURING OUT OF HOURS IN NIGHT --> NEXT DAY SEAU OR ELSE SAME DAY SEAU AND REPAIR.\n"
             "- Complex laceration may need plastic referral.\n"
         )
-    elif "foreign body" in case or in case "foreing" or in case "body" in case:
+    elif "foreign body" in case or "foreing" in case or "body" in case:
         st.image("FB.jpg", caption="FB")  # Add image
         return (
             "FOREIGN BODY.\n"
@@ -45,7 +45,7 @@ def get_ent_information(case):
             "- Non vegetative Ear or nose -  CAS clinic if no infective signs present.\n"
             "- BATTERY – EMERGENCY – NEEDS REMOVAL IN 1-2 HOURS."
         )
-    elif "neck abscess" in case or in case "neck" or in case "abscess" in case:
+    elif "neck abscess" in case or "neck" in case or "abscess" in case:
         st.image("NA.jpg", caption="Neck abscess")  # Add image
         return (
             "NECK ABSCESS.\n"
@@ -53,7 +53,7 @@ def get_ent_information(case):
             "- Bloods and IV abx. If airway concern = call ENT reg and may need FNE.\n"
             "- May need CT neck with contrast."
         )
-    elif "ludwig's angina" in case or in case "ludwig" or in case "angina" in case:
+    elif "ludwig's angina" in case or "ludwig" in case or "angina" in case:
         st.image("LA.jpeg", caption="Ludwig's Angina")  # Add image
         return (
             "LUDWIG ANGINA.\n"
@@ -61,7 +61,7 @@ def get_ent_information(case):
             "- Airway concern = FNE.\n"
             "- ED to refer to Max Fax."
         )
-    elif "post tonsillectomy bleed" in case or in case "tonsillectomy" or in case "bleed" in case:
+    elif "post tonsillectomy bleed" in case or "tonsillectomy" in case or "bleed" in case:
         st.image("TONS.jpeg", caption="Post tonsillectomy bleed")  # Add image
         return (
             "POST TONSILLECTOMY BLEED.\n"
@@ -71,7 +71,7 @@ def get_ent_information(case):
             "- Start H2O2 gargles.\n"
             "- Must admit all post tonsillectomy/adenotonsillectomy bleeds."
        )
-    elif "otitis externa/media/MASTOIDITS" in case or in case "otitis" or in case "media" or in case "mastoiditis" in case:
+    elif "otitis externa/media/MASTOIDITS" in case or "otitis" in case or "media" in case or "mastoiditis" in case:
         st.image("MAST.jpeg", caption="Ear infection")  # Add image
         return (
             "OTITIS EXTERNA/MEDIA/ OTOMASTOIDITIS.\n"
