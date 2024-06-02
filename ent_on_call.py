@@ -1,3 +1,5 @@
+import os
+import sys
 import streamlit as st
 st.image("TOP.jpg", caption="ENT on call", use_column_width=True)
 def get_ent_information(case):
