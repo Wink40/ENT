@@ -34,7 +34,7 @@ def get_ent_information(case):
             "- DURING OUT OF HOURS IN NIGHT --> NEXT DAY SEAU OR ELSE SAME DAY SEAU AND REPAIR.\n"
             "- Complex laceration may need plastic referral.\n"
         )
-    elif "foreign body" in case or "foreing" in case or "body" in case:
+    elif "foreign body" in case or "foreign" in case or "body" in case:
         st.image("FB.jpg", caption="FB")  # Add image
         return (
             "FOREIGN BODY.\n"
