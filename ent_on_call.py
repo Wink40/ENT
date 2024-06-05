@@ -11,7 +11,7 @@ with st.container():
 
     with col2:
         # image
-        st.image("right_top.jpeg", width=300)
+        st.image("left_top.jpg", width=300)
 
     with col3:
         # Display the image on the right
